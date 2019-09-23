@@ -5,7 +5,11 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <style>{`body {background: #069}`}</style>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          />
+          <style>{`body {background: #33FFEC}`}</style>
         </Head>
         <body>
           <Main />

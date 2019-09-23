@@ -10,6 +10,7 @@ import Avatar from '@material-ui/core/Avatar';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import axios from 'axios';
 import Link from 'next/link';
+import withAnalytics from '../src/hocs/withAnalytics';
 // import { Container } from './styles';
 
 const useStyles = makeStyles(theme => ({
@@ -25,7 +26,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function User({ users }) {
+function User({ users }) {
   const classes = useStyles();
 
   return (
@@ -36,13 +37,15 @@ export default function User({ users }) {
       <CssBaseline />
       <Container maxWidth="sm">
         <div className={classes.root}>
-          <link
-            rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-          />
           <List component="nav" aria-label="main mailbox folders">
             {users.map(user => (
-              <ListItem button alignItems="flex-start">
+              <ListItem
+                alignItems="center"
+                key={user.id}
+                button
+                component="a"
+                href={user.html_url}
+              >
                 <ListItemAvatar>
                   <Avatar
                     alt="Remy Sharp"
@@ -71,3 +74,5 @@ User.getInitialProps = async () => {
 
   return { users: response.data };
 };
+
+export default withAnalytics()(User);

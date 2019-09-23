@@ -1227,28 +1227,36 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
         lineNumber: 7
       },
       __self: this
-    }, __jsx("style", {
+    }, __jsx("link", {
+      rel: "stylesheet",
+      href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 8
       },
       __self: this
-    }, `body {background: #069}`)), __jsx("body", {
+    }), __jsx("style", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 12
+      },
+      __self: this
+    }, `body {background: #33FFEC}`)), __jsx("body", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 14
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 15
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 16
       },
       __self: this
     })));

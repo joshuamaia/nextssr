@@ -11014,7 +11014,7 @@ var Home = function Home() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fjoshua%2Frocketseat%2Fbonus%2Fnetxtssr%2Fpages%2Findex.js ***!
   \************************************************************************************************************************************/
@@ -11037,5 +11037,5 @@ module.exports = dll_01f9a3fa864a7b7414d8;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

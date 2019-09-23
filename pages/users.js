@@ -16,7 +16,7 @@ import withAnalytics from '../src/hocs/withAnalytics';
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
-    maxWidth: 360,
+    maxWidth: 460,
     backgroundColor: theme.palette.background.paper
   },
   bigAvatar: {
@@ -44,7 +44,7 @@ function User({ users }) {
                 key={user.id}
                 button
                 component="a"
-                href={user.html_url}
+                href={`/users/${user.login}`}
               >
                 <ListItemAvatar>
                   <Avatar

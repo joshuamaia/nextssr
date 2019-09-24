@@ -11,10 +11,10 @@ import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import axios from 'axios';
 import Link from 'next/link';
 import withAnalytics from '../src/hocs/withAnalytics';
-// import { Container } from './styles';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    marginTop: 20,
     width: '100%',
     maxWidth: 460,
     backgroundColor: theme.palette.background.paper
@@ -35,33 +35,31 @@ function User({ users }) {
         <title>Usuários</title>
       </Head>
       <CssBaseline />
-      <Container maxWidth="sm">
-        <div className={classes.root}>
-          <List component="nav" aria-label="main mailbox folders">
-            {users.map(user => (
-              <ListItem
-                alignItems="center"
-                key={user.id}
-                button
-                component="a"
-                href={`/users/${user.login}`}
-              >
-                <ListItemAvatar>
-                  <Avatar
-                    alt="Remy Sharp"
-                    src={user.avatar_url}
-                    className={classes.bigAvatar}
-                  />
-                </ListItemAvatar>
-                <ListItemText primary={user.login} />
-              </ListItem>
-            ))}
-          </List>
-          <br />
-          <Link href="/">
-            <a>Voltar</a>
-          </Link>
-        </div>
+      <Container className={classes.root} maxWidth="sm">
+        <List component="nav" aria-label="main mailbox folders">
+          {users.map(user => (
+            <ListItem
+              alignItems="center"
+              key={user.id}
+              button
+              component="a"
+              href={`/users/${user.login}`}
+            >
+              <ListItemAvatar>
+                <Avatar
+                  alt="Remy Sharp"
+                  src={user.avatar_url}
+                  className={classes.bigAvatar}
+                />
+              </ListItemAvatar>
+              <ListItemText primary={user.login} />
+            </ListItem>
+          ))}
+        </List>
+        <br />
+        <Link href="/">
+          <a>Voltar</a>
+        </Link>
       </Container>
     </>
   );

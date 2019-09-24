@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
-import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 import Card from '@material-ui/core/Card';
@@ -15,23 +14,7 @@ import axios from 'axios';
 
 import withAnalytics from '../src/hocs/withAnalytics';
 
-const useStyles = makeStyles(theme => ({
-  card: {
-    maxWidth: 500,
-    marginTop: 10
-  },
-  media: {
-    height: 420,
-    paddingTop: '56.25%' // 16:9
-  },
-  avatar: {
-    backgroundColor: red[500]
-  }
-}));
-
 function Detail({ user }) {
-  const classes = useStyles();
-
   return (
     <>
       <Head>
@@ -39,10 +22,10 @@ function Detail({ user }) {
       </Head>
       <CssBaseline />
       <Container maxWidth="sm">
-        <Card className={classes.card}>
+        <Card style={{ maxWidth: 500, marginTop: 10 }}>
           <CardHeader
             avatar={
-              <Avatar aria-label="recipe" className={classes.avatar}>
+              <Avatar aria-label="recipe" style={{ backgroundColor: red[500] }}>
                 J
               </Avatar>
             }
@@ -50,7 +33,7 @@ function Detail({ user }) {
             subheader={user.company}
           />
           <CardMedia
-            className={classes.media}
+            style={{ height: 420, paddingTop: '56.25%' }}
             image={user.avatar_url}
             title="Avatar"
           />

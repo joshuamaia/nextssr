@@ -1217,7 +1217,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
     return __jsx("html", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null, __jsx("link", {
       rel: "stylesheet",
       href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-    }), __jsx("style", null, `body {background: #33FFEC}`)), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
+    }), __jsx("style", null, `body {background: #FFF}`)), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
   }
 
 }

@@ -10,7 +10,7 @@ import Avatar from '@material-ui/core/Avatar';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import axios from 'axios';
 import Link from 'next/link';
-import withAnalytics from '../src/hocs/withAnalytics';
+import withAnalytics from '~/hocs/withAnalytics';
 
 const useStyles = makeStyles(theme => ({
   root: {

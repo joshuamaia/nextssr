@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import axios from 'axios';
 
-import withAnalytics from '../src/hocs/withAnalytics';
+import withAnalytics from '~/hocs/withAnalytics';
 
 function Detail({ user }) {
   return (

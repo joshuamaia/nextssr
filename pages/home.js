@@ -11,7 +11,7 @@ import Container from '@material-ui/core/Container';
 import { red } from '@material-ui/core/colors';
 import Link from 'next/link';
 import axios from 'axios';
-import withAnalytics from '../src/hocs/withAnalytics';
+import withAnalytics from '~/hocs/withAnalytics';
 
 function Home({ user }) {
   return (
